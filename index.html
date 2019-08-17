@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Alpha Petx | Obten tu mejor amigo aquí</title>
+		<title>Alpha Pets | Obten tu mejor amigo aquí</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
@@ -23,7 +23,7 @@
 
 
 
-		<!------------------Menu ----------------------------------->
+		<!------------------Menu ----------------------------->
 
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,10 +34,10 @@
 		  <div class="collapse navbar-collapse" id="navbarText">
 		    <ul class="navbar-nav ml-3">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Casa Petx <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="#">Casa AlphaPets <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#"><strong>Acerca de </strong></a>
+		        <a class="nav-link" href="about.html"><strong>Nosotros </strong></a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#"><strong>Cachorros</strong></a>
@@ -49,8 +49,11 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="#"><strong>Blog</strong></a>
 		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><img class="mr-2" src="images/cart.png"><strong>¡Obtén Tu Cachorro Aquí!</strong></a>
+		      </li>
 		      <li class="nav-item btn btn-outline-warning p-0">
-		        <a class="nav-link" href="#"><strong>Contactanos</strong></a>
+		        <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><strong>Contáctanos</strong></a>
 		      </li>
 
 
@@ -60,6 +63,43 @@
 		</nav>
 
 		<!------------------Menu end--------------------------------->
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Formulario de contacto</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		          <div class="form-group">
+		            <label for="recipient-name" class="col-form-label">Nombre:</label>
+		            <input type="text" class="form-control" id="recipient-name">
+		          </div>
+		          <div class="form-group">
+		            <label for="recipient-name" class="col-form-label">correo:</label>
+		            <input type="text" class="form-control" id="recipient-name">
+		          </div>
+		           <div class="form-group">
+		            <label for="recipient-name" class="col-form-label">Telefono:</label>
+		            <input type="text" class="form-control" id="recipient-name">
+		          </div>
+		          <div class="form-group">
+		            <label for="message-text" class="col-form-label">Mensaje:</label>
+		            <textarea class="form-control" id="message-text"></textarea>
+		          </div>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		        <button type="button" class="btn btn-primary">Enviar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 
 
@@ -111,7 +151,7 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="section-title1 text-center">
-                        <h2><strong>¡Vive la experiencia de tener a <br> ese amigo fiel que tanto desea! </strong></h2>
+                        <h2><strong>¡Vive la experiencia de tener a <br> ese amigo fiel que tanto deseas! </strong></h2>
                         <img src="images/line.png" alt="">
                     </div>
                 </div>
@@ -335,17 +375,29 @@
 
 			<h2 class="text-center my-4"><strong>¡Clientes felices! Clientes satisfechos</strong></h2>
 
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="8000">
+			
 		  <div class="carousel-inner text-center">
-		    <div class="carousel-item active ml-5">
-		      <img src="images/testimonios/testi4.jpg" class="d-block w-50" alt="...">
-		    </div>
-		    <div class="carousel-item ml-5">
+		    <div class="carousel-item active ">
+
+		     <div class="d-flex">
+		     	<img src="images/testimonios/testi4.jpg" class="d-block w-50" alt="...">
+
 		      <img src="images/testimonios/testi3.jpg" class="d-block w-50" alt="...">
+		     </div>
+		      
+
 		    </div>
-		    <div class="carousel-item ml-5">
-		    	
-		    		<img src="images/testimonios/testi2.jpg" class="d-block w-50" alt="...">
+		    
+		    <div class="carousel-item ">
+
+		    <div class="d-flex">
+		    	 <img src="images/testimonios/testi1.jpg" class="d-block w-50" alt="..."> 
+
+		    <img src="images/testimonios/testi2.jpg" class="d-block w-50" alt="...">
+		    </div>
+
+		   
 		    	
 		      
 		    </div>
@@ -362,13 +414,61 @@
 			
 		</section>
 
+		<section class="blog">
+
+			<div class=" container">
+
+				<div class="row">
+
+					<div class="col-12 mb-4">
+
+						<h2 class="text-center"><strong>¡Descubre más en nuestro blog!</strong></h2>
+
+						<h4 class="text-center">Encontrarás información sobre los cuidados y características de nuestros cachorritos.</h4>
+
+
+
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+						<img class="w-100" src="images/blog/IMG-20190301-WA0004.jpg">
+						<h5 class="mt-3"> <strong>¡EL BULLDOG FRANCÉS Y SU INCREÍBLE ENCANTO!</strong></h5>
+						<p class="text-center">Si buscas un compañero amable, divertido y juguetón, ¡un Bulldog francés es la mejor opción! Estos encantadores animalitos, harán todo lo posible por robarse tu corazón y si… toda tu atención ¡TODA! Pero… ¿Cómo resistirse a este tierno pequeñito? Si son tan adorables y leales que enamoran de inmediato. Si no nos crees te daremos Leer más¡El Bulldog Francés y su increíble encanto![…]</p>
+
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+						<img class="w-100" src="images/blog/IMG-20190307-WA0008.jpg">
+						<h5 class="mt-3"> <strong>LOS 7 MEJORES CONSEJOS PARA CUIDAR A TU CACHORRO</strong></h5>
+						<p class="text-center">¡Qué felicidad! Un miembro peludo ha llegado para llenar de alegría los corazones de quienes forman parte su nuevo y cálido hogar. ¡Claro que sí, un hermoso y tierno cachorro! Pero… Debes tener en cuenta que es importante darle atención especial y los cuidados necesarios para mantenerlo feliz y totalmente sano.  Por esta razón, te Leer másLos 7 mejores consejos para cuidar a tu cachorro[…]</p>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+						<img class="w-100" src="images/blog/post-5-1024x1024.jpg">
+						<h5 class="mt-3"> <strong>¡CHIHUAHUA! ¿CUÁLES SON LAS VENTAJAS DE TENER UNO?</strong></h5>
+						<p class="text-center">Si te encantan los chihuahuas tanto como a nosotros, ¡pues este artículo es especialmente para ti! La ternura y astucia de estos pequeños ¡es incomparable! Conoce cuáles son las ventajas de tener un chihuahua, te las mostramos a continuación:  1. Son fieles, simpáticos y muy familiares Aman la compañía de sus familiares humanos, aunque resultan Leer más¡Chihuahua! ¿Cuáles son las ventajas de tener uno?[…]</p>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+						<img class="w-100" src="images/blog/Post4-1-1024x1024.jpg">
+						<h5 class="mt-3"> <strong>¡LOS POODLE! ¡CONOCE 10 CURIOSIDADES DEL CANICHE QUE NO SABÍAS!</strong></h5>
+						<p class="text-center">Los Poodle o Caniches es una de las razas más populares y queridas a nivel mundial. Además, estos caninos fueron utilizados como perros de compañía durante el siglo XV por los aristócratas y nobles. En su época, tener un perro de esta raza era ¡signo de elegancia! ¿Quieres saber más de esta raza tan elegante? Leer más¡Los Poodle! ¡Conoce 10 curiosidades del Caniche que no sabías![…]</p>
+					</div>
+
+					
+				</div>
+
+			</div>
+			
+		</section>
+
 		
 
 
 		<!------------------Pie de pagina-------------------------->
 
 
-			<footer class="footer-section" style="background: #161616">
+			<footer class="footer-section mt-4" style="background: #272727">
 
 			<div class="container">
 				<div class="row justify-content-center">
@@ -390,7 +490,7 @@
 
 							<li class="mb-4">
 								<i class="ion-email text-warning"></i>
-								alphapetx.@gmail.com
+								info@alphapetx.com
 							</li>
 
 							<li class="mb-4">
@@ -404,12 +504,12 @@
 
 					<div class="col-sm-12 col-md-2 text-center useful-links ">
 
-						<h5 class="text-light mt-5 "><strong>Casa Alpha Petx</strong></h5>
+						<h5 class="text-light mt-5 "><strong>Casa Alpha Pets</strong></h5>
 						
 						<ul class="text-light mt-3 list-unstyled">
 
 							<li class="mb-1"><a class="text-light" href="#servicios"><i class="ion-ios-arrow-thin-right"></i> Acerca de Alpha Petx</a></li>
-							<li class="mb-1"><a class="text-light" href="#membresias"><i class="ion-ios-arrow-thin-right"></i> Beneficios de Alpha Petx</a></li>
+							<li class="mb-1"><a class="text-light" href="#membresias"><i class="ion-ios-arrow-thin-right"></i> Beneficios de Alpha Pets</a></li>
 							<li class="mb-1"><a class="text-light" href="#calculadora"><i class="ion-ios-arrow-thin-right"></i>Como trabaja</a></li>
 							<li class="mb-1"><a class="text-light" href="#comunidad"><i class="ion-ios-arrow-thin-right"></i> Documentación Legal</a></li>
 							<li class="mb-1"><a class="text-light" href="#noticias"><i class="ion-ios-arrow-thin-right"></i> Terminos y Condiciones</a></li>
@@ -538,7 +638,7 @@
 				<div class="container">
 					<div class="text-center"><img src="images/LOGO.png"></div>
 					<p class="copyright text-center pt-3">
-						© 2019 Todos los derechos reservados <a href="#" target="_blank" class="text-warning"><u>Alpha Petx</u></a>
+						© 2019 Todos los derechos reservados <a href="#" target="_blank" class="text-warning"><u>Alpha Pets</u></a>
 					</p>
 				</div>
 			</div>
